@@ -43,13 +43,14 @@
   background-color: orange;
   font-size: 6rem;
   text-align: right;
+  border: 1px black solid;
 }
 .numpad{
   display:grid;
   grid-template-columns: auto auto auto auto;
 }
 .btns{
-  height:15vh;
+  height:19vh;
   width: 25vw;
   font-size: 2rem;
   background-color: rgb(204, 200, 200);
@@ -57,4 +58,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .total{
+    height: 28vh;
+  }
+
+  .btns{
+    height: 18vh;
+  }
 }
